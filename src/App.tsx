@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import Cart from './components/Cart'
+import Counter from './components/counter'
+import Navber from './components/nav'
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-    <h1 className='underline text-3xl'> Hello World</h1>
+    <Navber/>
+    <h1 className='underline text-3xl text-center'> Hello World</h1>
+    <Cart/>
+    <Counter/>
     </>
   )
 }
